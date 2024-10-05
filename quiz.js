@@ -1,4 +1,4 @@
-let submitBtn = document.querySelector("#submit-answer");
+let submitBtn = document.getElementById("submit-answer");
 let feedback = document.querySelector("#feedback");
 let userAnswer;
 
