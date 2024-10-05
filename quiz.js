@@ -2,7 +2,6 @@ let submitBtn = document.querySelector("#submit-answer");
 let feedback = document.querySelector("#feedback");
 let userAnswer;
 
-
 function checkAnswer() {
   let correctAnswer = "4";
   if (correctAnswer === userAnswer) {
@@ -11,6 +10,7 @@ function checkAnswer() {
     feedback.textContent = "That's incorrect. Try again!";
   }
 }
+
 Array.from(document.querySelectorAll('[name = "quiz"]')).forEach((element) => {
   element.addEventListener("change", (e) => {
     userAnswer = e.target.value;
