@@ -13,7 +13,9 @@ function checkAnswer() {
 
 Array.from(document.querySelectorAll('[name = "quiz"]')).forEach((element) => {
   element.addEventListener("change", (e) => {
-    userAnswer = e.target.value;
+    if (e.target.checked) {
+      userAnswer = e.target.value;
+    }
   });
 });
 
