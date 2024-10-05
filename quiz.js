@@ -4,8 +4,8 @@ let userAnswer;
 
 
 function checkAnswer() {
-  let correctValue = "4";
-  if (correctValue === userAnswer) {
+  let correctAnswer = "4";
+  if (correctAnswer === userAnswer) {
     feedback.textContent = "Correct! Well done.";
   } else {
     feedback.textContent = "That's incorrect. Try again!";
